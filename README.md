@@ -8,7 +8,7 @@ This is a copy of the pack's `tools/` folder, published on its own so it can be 
 
 - `langpack.py`: `export` dumps the current English catalogs, `diff` writes new or changed keys into chunks to translate, `merge` folds translated chunks back into the pack and validates it.
 - `export.mts`: exports the TUI and Desktop catalogs (run from the workspace with its own `tsx`).
-- `check.py`: checks a translated chunk (placeholders, empty values, protected tokens).
+- `check.py`: checks a translated chunk (missing, extra or empty keys, placeholders, leading spaces).
 - `GUIDE.md`: translation rules and tone for the Thai pack.
 - `en_snapshot.json`: the English text each Thai string was translated from; drives change detection.
 - `after-update.sh`: runs `export` and `diff` after an update and sends a desktop notification if work is needed.
